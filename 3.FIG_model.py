@@ -669,7 +669,7 @@ def create_interface():
 """
 
     with gr.Blocks(
-        title="Multilingual Image Search with Diffusion Animation",
+        title="Multilingual Image Fake Generation",
         theme=gr.themes.Soft(),
         css=custom_css
     ) as demo:
@@ -715,14 +715,14 @@ def create_interface():
         
         with gr.Row():
             query_input = gr.Textbox(
-                label="🔍 Generate Images (English)",
+                label="🖼️ Generate Images (English)",
                 placeholder="e.g., 'space station with solar panels', 'tank in battlefield', 'ship in fog'...",
                 lines=2,
                 elem_classes=["search-box"],
                 scale=4
             )
         
-        search_btn = gr.Button("🔎 Search", variant="primary", size="lg", scale=1)
+        search_btn = gr.Button(" Generate Images", variant="primary", size="lg", scale=1)
         
         # Best Match Section - Displayed Prominently
         gr.Markdown("### 🏆 Best Match")
