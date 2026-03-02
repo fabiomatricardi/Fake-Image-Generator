@@ -31,7 +31,7 @@ with gr.Blocks() as demo:
     gr.Markdown("#### 👾 with diffusion noise effect")
     with gr.Row():
         with gr.Column(scale=1):
-            myslide = gr.Slider(1, 50, 10)
+            myslide = gr.Slider(1, 50, 10, precision=0)
             submitta = gr.Button("Generate")
         with gr.Column(scale=2):
             myimage = gr.Image(None)
@@ -48,4 +48,4 @@ if __name__ == "__main__":
     print("\n" + "="*70)
     print("🚀 FAKE IMAGE GENERATION SYSTEM - READY")
     demo.queue()
-    demo.launch(server_name="0.0.0.0",server_port=7960)
+    demo.launch(server_port=7960,inbrowser=True)
