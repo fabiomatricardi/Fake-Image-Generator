@@ -170,7 +170,7 @@ print("   HF DATASET OFFLINE DOWNLOADER")
 print("🎯"*35 + "\n")
 
 # Step 1: Get repo name
-repo = input("Paste the HF dataset repo name (e.g., 'ma-xu/fine-t2i'): ").strip()
+repo = input("Paste the HF dataset repo name (e.g., 'cerealt/open-image-preferences-v1-binarized'): ").strip()
 if not repo:
     print("❌ Repo name is required!")
     exit(1)
@@ -405,4 +405,5 @@ except Exception as e:
     import traceback
     traceback.print_exc()
     save_progress(json_filename, dumpfile)
+
     print("✅ Partial progress saved.")
