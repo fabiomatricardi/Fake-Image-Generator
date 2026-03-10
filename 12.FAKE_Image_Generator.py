@@ -1,6 +1,6 @@
 # starting point is:
-# dataset from kaupane/nano-banana-pro-gen
-# json prepared from  1.big_dset_parquet_Ask.py  and saved in kaupane_nano-banana-pro-gen.json
+# dataset from cerealt/open-image-preferences-v1-binarized
+# json prepared from  11.new_dataset.py  and saved in cerealt_open-image-preferences-v1-binarized
 # https://huggingface.co/spaces/gradio/fake_diffusion/blob/main/app.py
 import gradio as gr
 import numpy as np
@@ -49,3 +49,4 @@ if __name__ == "__main__":
     print("🚀 FAKE IMAGE GENERATION SYSTEM - READY")
     demo.queue()
     demo.launch(server_port=7960,inbrowser=True)
+
